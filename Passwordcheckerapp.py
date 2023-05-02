@@ -13,7 +13,7 @@ def enter_clicked():
 
 app = ctk.CTk()
 app.geometry("500x500")
-app.title("Weeee.....weee.....weeee....wee...")
+app.title("Password Checker")
 
 nameLabel = ctk.CTkLabel(app, text="Name: ")
 nameLabel.grid(row=0, column=0)
@@ -21,10 +21,10 @@ nameLabel.grid(row=0, column=0)
 namEntry = ctk.CTkEntry(app, placeholder_text="Enter your name")
 namEntry.grid(row=0, column=1)
 
-addressLabel = ctk.CTkLabel(app, text="Address: ")
+addressLabel = ctk.CTkLabel(app, text="password: ")
 addressLabel.grid(row=1, column=0)
 
-AddressEntry = ctk.CTkEntry(app, placeholder_text="Enter address")
+AddressEntry = ctk.CTkEntry(app, placeholder_text="Enter Password")
 AddressEntry.grid(row=1, column=1)
 
 enterbutton = ctk.CTkButton(app, text="Enter", command= enter_clicked)
